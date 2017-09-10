@@ -1,0 +1,607 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v4.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context="com.example.deepakprasad.vaccino.MainActivity"
+    tools:showIn="@layout/activity_main">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_margin="16sp">
+
+            <Button
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:text="Scan QR code"
+                android:id="@+id/scan_qr_btn"/>
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:layout_marginLeft="16sp"
+                android:text="UID number:"
+                android:padding="16sp"
+                android:id="@+id/uid_TV"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_margin="16sp">
+
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:text="Mother's Name :"
+                android:padding="16sp"
+                android:textAppearance="@style/TextAppearance.AppCompat.Medium"/>
+            <EditText
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:paddingLeft="16sp"
+                android:id="@+id/mothers_name_ET" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginLeft="16sp"
+            android:layout_marginBottom="16sp"
+            android:layout_marginRight="16sp">
+
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:text="Father's Name :"
+                android:padding="16sp"
+                android:textAppearance="@style/TextAppearance.AppCompat.Medium"/>
+            <EditText
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:paddingLeft="16sp"
+                android:id="@+id/fathers_name_ET" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginLeft="16sp"
+            android:layout_marginBottom="16sp"
+            android:layout_marginRight="16sp">
+
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:text="Mobile Number :"
+                android:padding="16sp"
+                android:textAppearance="@style/TextAppearance.AppCompat.Medium"/>
+            <EditText
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:paddingLeft="16sp"
+                android:inputType="numberDecimal"
+
+                android:id="@+id/mobile_number_ET" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginLeft="16sp"
+            android:layout_marginBottom="16sp"
+            android:layout_marginRight="16sp">
+
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:text="Adhar ID :"
+                android:padding="16sp"
+                android:textAppearance="@style/TextAppearance.AppCompat.Medium"/>
+            <EditText
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:paddingLeft="16sp"
+                android:id="@+id/adhar_id_ET"
+                android:inputType="numberDecimal"
+                />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginLeft="16sp"
+            android:layout_marginBottom="16sp"
+            android:layout_marginRight="16sp">
+
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:text="Child's Name :"
+                android:padding="16sp"
+                android:textAppearance="@style/TextAppearance.AppCompat.Medium"/>
+            <EditText
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:paddingLeft="16sp"
+                android:id="@+id/childs_name_ET" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginLeft="16sp"
+            android:layout_marginBottom="16sp"
+            android:layout_marginRight="16sp">
+
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:text="Birth Date :"
+                android:padding="16sp"
+                android:textAppearance="@style/TextAppearance.AppCompat.Medium"/>
+
+            <DatePicker
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:id="@+id/birth_date_CV"></DatePicker>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginLeft="16sp"
+            android:layout_marginBottom="16sp"
+            android:layout_marginRight="16sp">
+
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:text="Gender :"
+                android:padding="16sp"
+                android:textAppearance="@style/TextAppearance.AppCompat.Medium"/>
+            <Spinner
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:id="@+id/gender_spinner"></Spinner>
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginLeft="16sp"
+            android:layout_marginBottom="16sp"
+            android:layout_marginRight="16sp">
+
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:text="Hep-B  :"
+                android:padding="16sp"
+                android:textAppearance="@style/TextAppearance.AppCompat.Medium"/>
+            <EditText
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:paddingLeft="16sp"
+                android:id="@+id/hepb_ET" />
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginLeft="16sp"
+            android:layout_marginBottom="16sp"
+            android:layout_marginRight="16sp">
+
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:text="OPV-0  :"
+                android:padding="16sp"
+                android:textAppearance="@style/TextAppearance.AppCompat.Medium"/>
+            <EditText
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:paddingLeft="16sp"
+                android:id="@+id/OPV0_ET" />
+        </LinearLayout>
+         <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginLeft="16sp"
+        android:layout_marginBottom="16sp"
+        android:layout_marginRight="16sp">
+
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:text="BCG :"
+            android:padding="16sp"
+            android:textAppearance="@style/TextAppearance.AppCompat.Medium"/>
+        <EditText
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:paddingLeft="16sp"
+            android:id="@+id/BCG" />
+         </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginLeft="16sp"
+            android:layout_marginBottom="16sp"
+            android:layout_marginRight="16sp">
+
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:text="Penta-1  :"
+                android:padding="16sp"
+                android:textAppearance="@style/TextAppearance.AppCompat.Medium"/>
+            <EditText
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:paddingLeft="16sp"
+                android:id="@+id/Penta1" />
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginLeft="16sp"
+            android:layout_marginBottom="16sp"
+            android:layout_marginRight="16sp">
+
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:text="OPV-1  :"
+                android:padding="16sp"
+                android:textAppearance="@style/TextAppearance.AppCompat.Medium"/>
+            <EditText
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:paddingLeft="16sp"
+                android:id="@+id/OPV1" />
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginLeft="16sp"
+            android:layout_marginBottom="16sp"
+            android:layout_marginRight="16sp">
+
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:text="IPV-1  :"
+                android:padding="16sp"
+                android:textAppearance="@style/TextAppearance.AppCompat.Medium"/>
+            <EditText
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:paddingLeft="16sp"
+                android:id="@+id/IPV1" />
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginLeft="16sp"
+            android:layout_marginBottom="16sp"
+            android:layout_marginRight="16sp">
+
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:text="Penta-2   :"
+                android:padding="16sp"
+                android:textAppearance="@style/TextAppearance.AppCompat.Medium"/>
+            <EditText
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:paddingLeft="16sp"
+                android:id="@+id/Penta2" />
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginLeft="16sp"
+            android:layout_marginBottom="16sp"
+            android:layout_marginRight="16sp">
+
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:text="OPV-2  :"
+                android:padding="16sp"
+                android:textAppearance="@style/TextAppearance.AppCompat.Medium"/>
+            <EditText
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:paddingLeft="16sp"
+                android:id="@+id/OPV2" />
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginLeft="16sp"
+            android:layout_marginBottom="16sp"
+            android:layout_marginRight="16sp">
+
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:text="Penta-3  :"
+                android:padding="16sp"
+                android:textAppearance="@style/TextAppearance.AppCompat.Medium"/>
+            <EditText
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:paddingLeft="16sp"
+                android:id="@+id/Penta3" />
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginLeft="16sp"
+            android:layout_marginBottom="16sp"
+            android:layout_marginRight="16sp">
+
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:text="OPV-3  :"
+                android:padding="16sp"
+                android:textAppearance="@style/TextAppearance.AppCompat.Medium"/>
+            <EditText
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:paddingLeft="16sp"
+                android:id="@+id/OPV3" />
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginLeft="16sp"
+            android:layout_marginBottom="16sp"
+            android:layout_marginRight="16sp">
+
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:text="IPV-2  :"
+                android:padding="16sp"
+                android:textAppearance="@style/TextAppearance.AppCompat.Medium"/>
+            <EditText
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:paddingLeft="16sp"
+                android:id="@+id/IPV2" />
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginLeft="16sp"
+            android:layout_marginBottom="16sp"
+            android:layout_marginRight="16sp">
+
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:text="Measles-1  :"
+                android:padding="16sp"
+                android:textAppearance="@style/TextAppearance.AppCompat.Medium"/>
+            <EditText
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:paddingLeft="16sp"
+                android:id="@+id/Measles1" />
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginLeft="16sp"
+            android:layout_marginBottom="16sp"
+            android:layout_marginRight="16sp">
+
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:text="Measles-2  :"
+                android:padding="16sp"
+                android:textAppearance="@style/TextAppearance.AppCompat.Medium"/>
+            <EditText
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:paddingLeft="16sp"
+                android:id="@+id/Measles2" />
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginLeft="16sp"
+            android:layout_marginBottom="16sp"
+            android:layout_marginRight="16sp">
+
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:text="OPV Booster   :"
+                android:padding="16sp"
+                android:textAppearance="@style/TextAppearance.AppCompat.Medium"/>
+            <EditText
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:paddingLeft="16sp"
+                android:id="@+id/OPV_Booster" />
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginLeft="16sp"
+            android:layout_marginBottom="16sp"
+            android:layout_marginRight="16sp">
+
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:text="DPT Booster-1  :"
+                android:padding="16sp"
+                android:textAppearance="@style/TextAppearance.AppCompat.Medium"/>
+            <EditText
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:paddingLeft="16sp"
+                android:id="@+id/DPT_Booster1" />
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginLeft="16sp"
+            android:layout_marginBottom="16sp"
+            android:layout_marginRight="16sp">
+
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:text="DPT Booster-2   :"
+                android:padding="16sp"
+                android:textAppearance="@style/TextAppearance.AppCompat.Medium"/>
+            <EditText
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:paddingLeft="16sp"
+                android:id="@+id/DPT_Booster2" />
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginLeft="16sp"
+            android:layout_marginBottom="16sp"
+            android:layout_marginRight="16sp">
+
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:text="Next  :"
+                android:padding="16sp"
+                android:textAppearance="@style/TextAppearance.AppCompat.Medium"/>
+            <EditText
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:paddingLeft="16sp"
+                android:id="@+id/next" />
+        </LinearLayout>
+
+
+
+
+
+
+    </LinearLayout>
+</android.support.v4.widget.NestedScrollView>

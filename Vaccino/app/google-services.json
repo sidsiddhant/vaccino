@@ -1,0 +1,42 @@
+{
+  "project_info": {
+    "project_number": "619561525360",
+    "firebase_url": "https://vaccino-3ec08.firebaseio.com",
+    "project_id": "vaccino-3ec08",
+    "storage_bucket": "vaccino-3ec08.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:619561525360:android:3eed593f8923948a",
+        "android_client_info": {
+          "package_name": "com.example.deepakprasad.vaccino"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "619561525360-qva0lfglig3kjlpl8a1kdci1fes8rbv8.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDLv_PswVFM29QtrS_edbjD92yGTy17Z50"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
